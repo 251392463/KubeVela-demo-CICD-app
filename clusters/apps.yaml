@@ -8,8 +8,7 @@ spec:
     type: kustomize
     properties:
       repoType: git
-      url: https://codeup.aliyun.com/616a7ea7ea46a7508ba91d44/KubeVela-demo-CICD-app
-      secretRef: git-secret
+      url: https://github.com/251392463/KubeVela-demo-CICD-app
       pullInterval: 1m
       git:
         branch: prod
