@@ -7,7 +7,7 @@ spec:
     - name: kubevela-demo-app-web
       type: webservice
       properties:
-        image:  registry.cn-hangzhou.aliyuncs.com/ycg-base/kubevela-demo-cicd-app:v2
+        image:  registry.cn-hangzhou.aliyuncs.com/ycg-base/kubevela-demo-cicd-app:v1
         imagePullPolicy: Always
         port: 8080
       traits:
