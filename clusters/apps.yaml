@@ -11,5 +11,5 @@ spec:
       url: https://github.com/251392463/KubeVela-demo-CICD-app
       pullInterval: 1m
       git:
-        branch: prod
+        branch: main
       path: ./apps
