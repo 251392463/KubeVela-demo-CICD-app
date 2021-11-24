@@ -1,0 +1,18 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: kubevela-demo-app
+spec:
+  components:
+    - name: kubevela-demo-app-web
+      type: webservice
+      properties:
+        image:  registry.cn-hangzhou.aliyuncs.com/ycg-base/kubevela-demo-cicd-app:v1
+        imagePullPolicy: Always
+        port: 8080
+      traits:
+        - type: ingress
+          properties:
+            domain: kubevela-demo-cicd-app.example.com
+            http:
+              "/": 8088
